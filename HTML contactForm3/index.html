@@ -4,6 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100vh;
+            background-image: url(../Assets/pexels-miami302-18998608.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: #000;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            height: 550px;
+            width: 500px;
+            visibility: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content:Start;
+            align-items: center;
+            background-color: rgba(15, 15, 15, 0.784);
+            box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.29);
+            padding-top: 50px;
+        }
+        .form>h1{
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.491);
+            font-size: 48px;
+            color: #ffffffcd;
+        }
+        .form>p{
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.834);
+            font-size: 20px;
+            color: #ffffffc6;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+        input{
+            padding: 8px 100px;
+        }
+        select{
+            padding: 8px 30px;
+        }
+        label{
+            color: rgba(255, 255, 255, 0.677);
+            font-size: 20px;
+            font-weight: 700;
+        }
+        ::placeholder{
+            font-size: 18px;
+        }
+        textarea{
+            padding: 40px 100px ;
+            scrollbar-width: none;
+            text-align: start;
+        }
+        button{
+            margin: 5px 120px;
+            padding: 10px;
+            background-color: #D2D2D2;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,6 +98,9 @@
                     <option value="hello1">Where is my Mind?</option>
                     <option value="hello2">ValarMorghulis</option>
                 </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="please write your message here" required="required"></textarea>
+                <button name="submit" type="submit" id="submit">SEND</button>
             </Form>
         </div>
     </div>
